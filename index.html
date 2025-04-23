@@ -3,15 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <title>Meu Portfólio</title>
+    <style>
+        body {
+            background-color: #001f3f; /* azul marinho */
+            color: white;
+            font-family: Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #001f3f;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            border-bottom: 2px solid white;
+        }
+
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+
+        .coluna {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .coluna img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #001a33;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            border-top: 1px solid white;
+        }
+
+        a {
+            color: #00ffcc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Meu Portfólio</h1>
-    <p>Aqui estão algumas páginas web desenvolvidas por mim:</p>
+    <header>Meu Portfólio</header>
 
-    <ul>
-        <li><a href="https://www.ntmbv.com.br" target="_blank">NTM Boa Viagem</a></li>
-        <li><a href="https://www.voedasalgateria.com" target="_blank">Vó Eda Salgateria</a></li>
-        <li><a href="https://www.eibvemrede.com.br" target="_blank">EIBV em Rede</a></li>
-    </ul>
+    <div class="container">
+        <div class="coluna">
+            <img src="https://via.placeholder.com/300x200.png?text=Minha+Foto" alt="Foto de Samuel Alves">
+            <p>Sou Samuel Alves, estudante de Licenciatura da Computação pela UECE de Boa Viagem. Decidi ir além com o Curso de Full Stack da Capacita Brasil e estou gostando muito.</p>
+        </div>
+        <div class="coluna">
+            <h2>Páginas Desenvolvidas por Mim:</h2>
+            <ul>
+                <li><a href="https://www.ntmbv.com.br" target="_blank">NTM Boa Viagem</a></li>
+                <li><a href="https://www.voedasalgateria.com" target="_blank">Vó Eda Salgateria</a></li>
+                <li><a href="https://www.eibvemrede.com.br" target="_blank">EIBV em Rede</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        Desenvolvida por Samuel Alves &reg; 2025
+    </footer>
 </body>
 </html>
